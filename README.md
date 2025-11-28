@@ -18,3 +18,5 @@ Ambos datasets fueron sacados de "Data Science Learning Community", y ambos fuer
 # Autora
 
 - Golondrina Segura
+
+![Logo del proyecto](imagenes/tasha.png)
