@@ -1,0 +1,331 @@
+name,category,cr,size,type,ac,hp_number,resistances,vulnerabilities,immunities
+Aboleth,Aboleth,10,Large,Aberration,17,150,NA,NA,NA
+Air Elemental,Air Elemental,5,Large,Elemental,15,90,"Bludgeoning, Lightning, Piercing, Slashing",NA,"Poison, Thunder; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Animated Armor,Animated Objects,1,Medium,Construct,18,33,NA,NA,"Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Animated Flying Sword,Animated Objects,0.25,Small,Construct,17,14,NA,NA,"Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Animated Rug of Smothering,Animated Objects,2,Large,Construct,12,27,NA,NA,"Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Ankheg,Ankheg,2,Large,Monstrosity,14,45,NA,NA,NA
+Assassin,Assassin,8,Medium or Small,Humanoid,16,97,Poison,NA,NA
+Awakened Shrub,Awakened Plants,0,Small,Plant,9,10,Piercing,Fire,NA
+Awakened Tree,Awakened Plants,2,Huge,Plant,13,59,"Bludgeoning, Piercing",Fire,NA
+Axe Beak,Axe Beak,0.25,Large,Monstrosity,11,19,NA,NA,NA
+Azer Sentinel,Azer,2,Medium,Elemental,17,39,NA,NA,"Fire, Poison; Poisoned"
+Balor,Balor,19,Huge,Fiend,19,287,"Cold, Lightning",NA,"Fire, Poison; Charmed, Frightened, Poisoned"
+Bandit,Bandits,0.125,Medium or Small,Humanoid,12,11,NA,NA,NA
+Bandit Captain,Bandits,2,Medium or Small,Humanoid,15,52,NA,NA,NA
+Barbed Devil,Barbed Devil,5,Medium,Fiend,15,110,Cold,NA,"Fire, Poison; Poisoned"
+Basilisk,Basilisk,3,Medium,Monstrosity,15,52,NA,NA,NA
+Bearded Devil,Bearded Devil,3,Medium,Fiend,13,58,Cold,NA,"Fire, Poison; Frightened, Poisoned"
+Behir,Behir,11,Huge,Monstrosity,17,168,NA,NA,Lightning
+Berserker,Berserker,2,Medium or Small,Humanoid,13,67,NA,NA,NA
+Black Dragon Wyrmling,Black Dragons,2,Medium,Dragon,17,33,NA,NA,Acid
+Young Black Dragon,Black Dragons,7,Large,Dragon,18,127,NA,NA,Acid
+Adult Black Dragon,Black Dragons,14,Huge,Dragon,19,195,NA,NA,Acid
+Ancient Black Dragon,Black Dragons,21,Gargantuan,Dragon,22,367,NA,NA,Acid
+Black Pudding,Black Pudding,4,Large,Ooze,7,68,NA,NA,"Acid, Cold, Lightning, Slashing; Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained"
+Blink Dog,Blink Dog,0.25,Medium,Fey,13,22,NA,NA,NA
+Blue Dragon Wyrmling,Blue Dragons,3,Medium,Dragon,17,65,NA,NA,Lightning
+Young Blue Dragon,Blue Dragons,9,Large,Dragon,18,152,NA,NA,Lightning
+Adult Blue Dragon,Blue Dragons,16,Huge,Dragon,19,212,NA,NA,Lightning
+Ancient Blue Dragon,Blue Dragons,23,Gargantuan,Dragon,22,481,NA,NA,Lightning
+Bone Devil,Bone Devil,9,Large,Fiend,16,161,Cold,NA,"Fire, Poison; Poisoned"
+Brass Dragon Wyrmling,Brass Dragons,1,Medium,Dragon,15,22,NA,NA,Fire
+Young Brass Dragon,Brass Dragons,6,Large,Dragon,17,110,NA,NA,Fire
+Adult Brass Dragon,Brass Dragons,13,Huge,Dragon,18,172,NA,NA,Fire
+Ancient Brass Dragon,Brass Dragons,20,Gargantuan,Dragon,20,332,NA,NA,Fire
+Bronze Dragon Wyrmling,Bronze Dragons,2,Medium,Dragon,15,39,NA,NA,Lightning
+Young Bronze Dragon,Bronze Dragons,8,Large,Dragon,17,142,NA,NA,Lightning
+Adult Bronze Dragon,Bronze Dragons,15,Huge,Dragon,18,212,NA,NA,Lightning
+Ancient Bronze Dragon,Bronze Dragons,22,Gargantuan,Dragon,22,444,NA,NA,Lightning
+Bugbear Stalker,Bugbears,3,Medium,Fey,15,65,NA,NA,NA
+Bugbear Warrior,Bugbears,1,Medium,Fey,14,33,NA,NA,NA
+Bulette,Bulette,5,Large,Monstrosity,17,94,NA,NA,NA
+Centaur Trooper,Centaur,2,Large,Fey,16,45,NA,NA,NA
+Chain Devil,Chain Devil,8,Medium,Fiend,15,85,"Bludgeoning, Cold, Piercing, Slashing",NA,"Fire, Poison; Poisoned"
+Chimera,Chimera,6,Large,Monstrosity,14,114,NA,NA,NA
+Chuul,Chuul,4,Large,Aberration,16,76,NA,NA,Poison; Poisoned
+Clay Golem,Clay Golem,9,Large,Construct,14,123,"Bludgeoning, Piercing, Slashing",NA,"Acid, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Cloaker,Cloaker,8,Large,Aberration,14,91,NA,NA,Frightened
+Cloud Giant,Cloud Giant,9,Huge,Giant,14,200,NA,NA,NA
+Cockatrice,Cockatrice,0.5,Small,Monstrosity,11,22,NA,NA,Petrified
+Commoner,Commoner,0,Medium or Small,Humanoid,10,4,NA,NA,NA
+Copper Dragon Wyrmling,Copper Dragons,1,Medium,Dragon,16,22,NA,NA,Acid
+Young Copper Dragon,Copper Dragons,7,Large,Dragon,17,119,NA,NA,Acid
+Adult Copper Dragon,Copper Dragons,14,Huge,Dragon,18,184,NA,NA,Acid
+Ancient Copper Dragon,Copper Dragons,21,Gargantuan,Dragon,21,367,NA,NA,Acid
+Couatl,Couatl,4,Medium,Celestial,19,60,"Bludgeoning, Piercing, Slashing",NA,"Psychic, Radiant"
+Swarm of Crawling Claws,Crawling Claw,3,Medium,Swarm of Tiny Undead,12,49,"Bludgeoning, Piercing, Slashing",NA,"Necrotic, Poison; Charmed, Exhaustion, Frightened, Grappled, Incapacitated, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned"
+Cultist,Cultists,0.125,Medium or Small,Humanoid,12,9,NA,NA,NA
+Cultist Fanatic,Cultists,2,Medium or Small,Humanoid,13,44,NA,NA,NA
+Darkmantle,Darkmantle,0.5,Small,Aberration,11,22,NA,NA,NA
+Death Dog,Death Dog,1,Medium,Monstrosity,12,39,NA,NA,"Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
+Deva,Deva,10,Medium,Celestial,17,229,Radiant,NA,"Charmed, Exhaustion, Frightened"
+Djinni,Djinni,11,Large,Elemental,17,218,NA,NA,"Lightning, Thunder"
+Doppelganger,Doppelganger,3,Medium,Monstrosity,14,52,NA,NA,Charmed
+Dragon Turtle,Dragon Turtle,17,Gargantuan,Dragon,20,356,Fire,NA,NA
+Dretch,Dretch,0.25,Small,Fiend,11,18,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Drider,Drider,6,Large,Monstrosity,19,123,NA,NA,NA
+Druid,Druid,2,Medium or Small,Humanoid,13,44,NA,NA,NA
+Dryad,Dryad,1,Medium,Fey,16,22,NA,NA,NA
+Earth Elemental,Earth Elemental,5,Large,Elemental,17,147,NA,Thunder,"Poison; Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious"
+Efreeti,Efreeti,11,Large,Elemental,17,212,NA,NA,Fire
+Erinyes,Erinyes,12,Medium,Fiend,18,178,Cold,NA,"Fire, Poison; Poisoned"
+Ettercap,Ettercap,2,Medium,Monstrosity,13,44,NA,NA,NA
+Ettin,Ettin,4,Large,Giant,12,85,NA,NA,"Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
+Fire Elemental,Fire Elemental,5,Large,Elemental,13,93,"Bludgeoning, Piercing, Slashing",NA,"Fire, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Fire Giant,Fire Giant,9,Huge,Giant,18,162,NA,NA,Fire
+Flesh Golem,Flesh Golem,5,Medium,Construct,9,127,NA,NA,"Lightning, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Frost Giant,Frost Giant,8,Huge,Giant,15,149,NA,NA,Cold
+Shrieker Fungus,Fungi,0,Medium,Plant,5,13,NA,NA,"Blinded, Charmed, Deafened, Frightened"
+Violet Fungus,Fungi,0.25,Medium,Plant,5,18,NA,NA,"Blinded, Charmed, Deafened, Frightened"
+Gargoyle,Gargoyle,2,Medium,Elemental,15,67,NA,NA,"Poison; Exhaustion, Petrified, Poisoned"
+Gelatinous Cube,Gelatinous Cube,2,Large,Ooze,6,63,NA,NA,"Acid; Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone"
+Ghast,Ghast,2,Medium,Undead,13,36,Necrotic,NA,"Poison; Charmed, Exhaustion, Poisoned"
+Ghost,Ghost,4,Medium,Undead,11,45,"Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder",NA,"Necrotic, Poison; Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained"
+Ghoul,Ghoul,1,Medium,Undead,12,22,NA,NA,"Poison; Charmed, Exhaustion, Poisoned"
+Gibbering Mouther,Gibbering Mouther,2,Medium,Aberration,9,52,NA,NA,Prone
+Glabrezu,Glabrezu,9,Large,Fiend,17,189,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Gladiator,Gladiator,5,Medium or Small,Humanoid,16,112,NA,NA,NA
+Gnoll Warrior,Gnoll,0.5,Medium,Fiend,15,27,NA,NA,NA
+Goblin Minion,Goblins,0.125,Small,Fey,12,7,NA,NA,NA
+Goblin Warrior,Goblins,0.25,Small,Fey,15,10,NA,NA,NA
+Goblin Boss,Goblins,1,Small,Fey,17,21,NA,NA,NA
+Gold Dragon Wyrmling,Gold Dragons,3,Medium,Dragon,17,60,NA,NA,Fire
+Young Gold Dragon,Gold Dragons,10,Large,Dragon,18,178,NA,NA,Fire
+Adult Gold Dragon,Gold Dragons,17,Huge,Dragon,19,243,NA,NA,Fire
+Ancient Gold Dragon,Gold Dragons,24,Gargantuan,Dragon,22,546,NA,NA,Fire
+Gorgon,Gorgon,5,Large,Construct,19,114,NA,NA,"Exhaustion, Petrified"
+Gray Ooze,Gray Ooze,0.5,Medium,Ooze,9,22,"Acid, Cold, Fire",NA,"Blinded, Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained"
+Green Dragon Wyrmling,Green Dragons,2,Medium,Dragon,17,38,NA,NA,Poison; Poisoned
+Young Green Dragon,Green Dragons,8,Large,Dragon,18,136,NA,NA,Poison; Poisoned
+Adult Green Dragon,Green Dragons,15,Huge,Dragon,19,207,NA,NA,Poison; Poisoned
+Ancient Green Dragon,Green Dragons,22,Gargantuan,Dragon,21,402,NA,NA,Poison; Poisoned
+Green Hag,Green Hag,3,Medium,Fey,17,82,NA,NA,NA
+Grick,Grick,2,Medium,Aberration,14,54,NA,NA,NA
+Griffon,Griffon,2,Large,Monstrosity,12,59,NA,NA,NA
+Grimlock,Grimlock,0.25,Medium,Aberration,11,11,NA,NA,NA
+Guardian Naga,Guardian Naga,10,Large,Celestial,18,136,NA,NA,"Poison; Charmed, Paralyzed, Poisoned, Restrained"
+Guard,Guards,0.125,Medium or Small,Humanoid,16,11,NA,NA,NA
+Guard Captain,Guards,4,Medium or Small,Humanoid,18,75,NA,NA,NA
+Half-Dragon,Half-Dragon,5,Medium,Dragon,18,105,Damage type chosen for the Draconic Origin trait below,NA,NA
+Harpy,Harpy,1,Medium,Monstrosity,11,38,NA,NA,NA
+Hell Hound,Hell Hound,3,Medium,Fiend,15,58,NA,NA,Fire
+Hezrou,Hezrou,8,Large,Fiend,18,157,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Hill Giant,Hill Giant,5,Huge,Giant,13,105,NA,NA,NA
+Hippogriff,Hippogriff,1,Large,Monstrosity,11,26,NA,NA,NA
+Hobgoblin Warrior,Hobgoblins,0.5,Medium,Fey,18,11,NA,NA,NA
+Hobgoblin Captain,Hobgoblins,3,Medium,Fey,17,58,NA,NA,NA
+Homunculus,Homunculus,0,Tiny,Construct,13,4,NA,NA,"Poison; Charmed, Poisoned"
+Horned Devil,Horned Devil,11,Large,Fiend,18,199,Cold,NA,"Fire, Poison; Poisoned"
+Hydra,Hydra,8,Huge,Monstrosity,15,184,NA,NA,"Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
+Ice Devil,Ice Devil,14,Large,Fiend,18,228,NA,NA,"Cold, Fire, Poison; Poisoned"
+Imp,Imp,1,Tiny,Fiend,13,21,Cold,NA,"Fire, Poison; Poisoned"
+Incubus,Incubus,4,Medium,Fiend,15,66,"Cold, Fire, Poison, Psychic",NA,NA
+Invisible Stalker,Invisible Stalker,6,Large,Elemental,14,97,"Bludgeoning, Piercing, Slashing",NA,"Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Iron Golem,Iron Golem,16,Large,Construct,20,252,NA,NA,"Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Knight,Knight,3,Medium or Small,Humanoid,18,52,NA,NA,Frightened
+Kobold Warrior,Kobold,0.125,Small,Dragon,14,7,NA,NA,NA
+Kraken,Kraken,23,Gargantuan,Monstrosity,18,481,NA,NA,"Cold, Lightning; Frightened, Grappled, Paralyzed, Restrained"
+Lamia,Lamia,4,Large,Fiend,13,97,NA,NA,NA
+Lemure,Lemure,0,Medium,Fiend,9,9,Cold,NA,"Fire, Poison; Charmed, Frightened, Poisoned"
+Lich,Lich,21,Medium,Undead,20,315,"Cold, Lightning",NA,"Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned"
+Mage,Mages,6,Medium or Small,Humanoid,15,81,NA,NA,NA
+Archmage,Mages,12,Medium or Small,Humanoid,17,170,NA,NA,Psychic; Charmed (with Mind Blank)
+Magmin,Magmin,0.5,Small,Elemental,14,13,NA,NA,Fire
+Manticore,Manticore,3,Large,Monstrosity,14,68,NA,NA,NA
+Marilith,Marilith,16,Large,Fiend,16,220,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Medusa,Medusa,6,Medium,Monstrosity,15,127,NA,NA,NA
+Dust Mephit,Mephits,0.5,Small,Elemental,12,17,NA,Fire,"Poison; Exhaustion, Poisoned"
+Ice Mephit,Mephits,0.5,Small,Elemental,11,21,NA,Fire,"Cold, Poison; Exhaustion, Poisoned"
+Magma Mephit,Mephits,0.5,Small,Elemental,11,18,NA,Cold,"Fire, Poison; Exhaustion, Poisoned"
+Steam Mephit,Mephits,0.25,Small,Elemental,10,17,NA,NA,"Fire, Poison; Exhaustion, Poisoned"
+Merfolk Skirmisher,Merfolk,0.125,Medium,Elemental,11,11,NA,NA,NA
+Merrow,Merrow,2,Large,Monstrosity,13,45,NA,NA,NA
+Mimic,Mimic,2,Medium,Monstrosity,12,58,NA,NA,Acid; Prone
+Minotaur of Baphomet,Minotaur of Baphomet,3,Large,Monstrosity,14,85,NA,NA,NA
+Mummy,Mummies,3,Medium or Small,Undead,11,58,NA,Fire,"Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned"
+Mummy Lord,Mummies,15,Medium or Small,Undead,17,187,NA,Fire,"Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned"
+Nalfeshnee,Nalfeshnee,13,Large,Fiend,18,184,"Cold, Fire, Lightning",NA,"Poison; Frightened, Poisoned"
+Night Hag,Night Hag,5,Medium,Fiend,17,112,"Cold, Fire",NA,Charmed
+Nightmare,Nightmare,3,Large,Fiend,13,68,NA,NA,Fire
+Noble,Noble,0.125,Medium or Small,Humanoid,15,9,NA,NA,NA
+Ochre Jelly,Ochre Jelly,2,Large,Ooze,8,52,Acid,NA,"Lightning, Slashing; Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained"
+Ogre,Ogre,2,Large,Giant,11,68,NA,NA,NA
+Oni,Oni,7,Large,Fiend,17,119,Cold,NA,NA
+Otyugh,Otyugh,5,Large,Aberration,14,104,NA,NA,NA
+Owlbear,Owlbear,3,Large,Monstrosity,13,59,NA,NA,NA
+Pegasus,Pegasus,2,Large,Celestial,12,59,NA,NA,NA
+Phase Spider,Phase Spider,3,Large,Monstrosity,14,45,NA,NA,NA
+Pirate,Pirates,1,Medium or Small,Humanoid,14,33,NA,NA,NA
+Pirate Captain,Pirates,6,Medium or Small,Humanoid,17,84,NA,NA,NA
+Pit Fiend,Pit Fiend,20,Large,Fiend,21,337,Cold,NA,"Fire, Poison; Poisoned"
+Planetar,Planetar,16,Large,Celestial,19,262,Radiant,NA,"Charmed, Exhaustion, Frightened"
+Priest Acolyte,Priests,0.25,Medium or Small,Humanoid,13,11,NA,NA,NA
+Priest,Priests,2,Medium or Small,Humanoid,13,38,NA,NA,NA
+Pseudodragon,Pseudodragon,0.25,Tiny,Dragon,14,10,NA,NA,NA
+Purple Worm,Purple Worm,15,Gargantuan,Monstrosity,18,247,NA,NA,NA
+Quasit,Quasit,1,Tiny,Fiend,13,25,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Rakshasa,Rakshasa,13,Medium,Fiend,17,221,NA,Piercing damage from weapons wielded by creatures under the effect of a Bless spell,"Charmed, Frightened"
+Red Dragon Wyrmling,Red Dragons,4,Medium,Dragon,17,75,NA,NA,Fire
+Young Red Dragon,Red Dragons,10,Large,Dragon,18,178,NA,NA,Fire
+Adult Red Dragon,Red Dragons,17,Huge,Dragon,19,256,NA,NA,Fire
+Ancient Red Dragon,Red Dragons,24,Gargantuan,Dragon,22,507,NA,NA,Fire
+Remorhaz,Remorhaz,11,Huge,Monstrosity,17,195,NA,NA,"Cold, Fire"
+Roc,Roc,11,Gargantuan,Monstrosity,15,248,NA,NA,NA
+Roper,Roper,5,Large,Aberration,20,93,NA,NA,NA
+Rust Monster,Rust Monster,0.5,Medium,Monstrosity,14,33,NA,NA,NA
+Sahuagin Warrior,Sahuagin,0.5,Medium,Fiend,12,22,"Acid, Cold",NA,NA
+Salamander,Salamander,5,Large,Elemental,15,90,NA,Cold,Fire
+Satyr,Satyr,0.5,Medium,Fey,13,31,NA,NA,NA
+Scout,Scout,0.5,Medium or Small,Humanoid,13,16,NA,NA,NA
+Sea Hag,Sea Hag,2,Medium,Fey,14,52,NA,NA,NA
+Shadow,Shadow,0.5,Medium,Undead,12,27,"Acid, Cold, Fire, Lightning, Thunder",Radiant,"Necrotic, Poison; Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Shambling Mound,Shambling Mound,5,Large,Plant,15,110,"Cold, Fire",NA,"Lightning; Deafened, Exhaustion"
+Shield Guardian,Shield Guardian,7,Large,Construct,17,142,NA,NA,"Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Silver Dragon Wyrmling,Silver Dragons,2,Medium,Dragon,17,45,NA,NA,Cold
+Young Silver Dragon,Silver Dragons,9,Large,Dragon,18,168,NA,NA,Cold
+Adult Silver Dragon,Silver Dragons,16,Huge,Dragon,19,216,NA,NA,Cold
+Ancient Silver Dragon,Silver Dragons,23,Gargantuan,Dragon,22,468,NA,NA,Cold
+Skeleton,Skeletons,0.25,Medium,Undead,14,13,NA,Bludgeoning,"Poison; Exhaustion, Poisoned"
+Warhorse Skeleton,Skeletons,0.5,Large,Undead,13,22,NA,Bludgeoning,"Poison; Exhaustion, Poisoned"
+Minotaur Skeleton,Skeletons,2,Large,Undead,12,45,NA,Bludgeoning,"Poison; Exhaustion, Poisoned"
+Solar,Solar,21,Large,Celestial,21,297,NA,NA,"Poison, Radiant; Charmed, Exhaustion, Frightened, Poisoned"
+Specter,Specter,1,Medium,Undead,12,22,"Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder",NA,"Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Sphinx of Wonder,Sphinxes,1,Tiny,Celestial,13,24,"Necrotic, Psychic, Radiant",NA,NA
+Sphinx of Lore,Sphinxes,11,Large,Celestial,17,170,"Necrotic, Radiant",NA,"Psychic; Charmed, Frightened"
+Sphinx of Valor,Sphinxes,17,Large,Celestial,17,199,"Necrotic, Radiant",NA,"Psychic; Charmed, Frightened"
+Spirit Naga,Spirit Naga,8,Large,Fiend,17,135,NA,NA,"Poison; Charmed, Poisoned"
+Sprite,Sprite,0.25,Tiny,Fey,15,10,NA,NA,NA
+Spy,Spy,1,Medium or Small,Humanoid,12,27,NA,NA,NA
+Stirge,Stirge,0.125,Tiny,Monstrosity,13,5,NA,NA,NA
+Stone Giant,Stone Giant,7,Huge,Giant,17,126,NA,NA,NA
+Stone Golem,Stone Golem,10,Large,Construct,18,220,NA,NA,"Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+Storm Giant,Storm Giant,13,Huge,Giant,16,230,Cold,NA,"Lightning, Thunder"
+Succubus,Succubus,4,Medium,Fiend,15,71,"Cold, Fire, Poison, Psychic",NA,NA
+Tarrasque,Tarrasque,30,Gargantuan,Monstrosity,25,697,"Bludgeoning, Piercing, Slashing",NA,"Fire, Poison; Charmed, Deafened, Frightened, Paralyzed, Poisoned"
+Tough,Toughs,0.5,Medium or Small,Humanoid,12,32,NA,NA,NA
+Tough Boss,Toughs,4,Medium or Small,Humanoid,16,82,NA,NA,NA
+Treant,Treant,9,Huge,Plant,16,138,"Bludgeoning, Piercing",Fire,NA
+Troll,Troll,5,Large,Giant,15,94,NA,NA,NA
+Troll Limb,Troll,0.5,Small,Giant,13,14,NA,NA,NA
+Unicorn,Unicorn,5,Large,Celestial,12,97,NA,NA,"Poison; Charmed, Paralyzed, Poisoned"
+Vampire Familiar,Vampires,3,Medium or Small,Humanoid,15,65,Necrotic,NA,Charmed (except from its vampire master)
+Vampire Spawn,Vampires,5,Medium or Small,Undead,16,90,Necrotic,NA,NA
+Vampire,Vampires,13,Medium or Small,Undead,16,195,Necrotic,NA,NA
+Vrock,Vrock,6,Large,Fiend,15,152,"Cold, Fire, Lightning",NA,Poison; Poisoned
+Warrior Infantry,Warriors,0.125,Medium or Small,Humanoid,13,9,NA,NA,NA
+Warrior Veteran,Warriors,3,Medium or Small,Humanoid,17,65,NA,NA,NA
+Water Elemental,Water Elemental,5,Large,Elemental,14,114,"Acid, Fire",NA,"Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Werebear,Werebear,5,Medium or Small,Monstrosity,15,135,NA,NA,NA
+Wereboar,Wereboar,4,Medium or Small,Monstrosity,15,97,NA,NA,NA
+Wererat,Wererat,2,Medium or Small,Monstrosity,13,60,NA,NA,NA
+Weretiger,Weretiger,4,Medium or Small,Monstrosity,12,120,NA,NA,NA
+Werewolf,Werewolf,3,Medium or Small,Monstrosity,15,71,NA,NA,NA
+White Dragon Wyrmling,White Dragons,2,Medium,Dragon,16,32,NA,NA,Cold
+Young White Dragon,White Dragons,6,Large,Dragon,17,123,NA,NA,Cold
+Adult White Dragon,White Dragons,13,Huge,Dragon,18,200,NA,NA,Cold
+Ancient White Dragon,White Dragons,20,Gargantuan,Dragon,20,333,NA,NA,Cold
+Wight,Wight,3,Medium,Undead,14,82,Necrotic,NA,"Poison; Exhaustion, Poisoned"
+Will-o’-Wisp,Will-o’-Wisp,2,Tiny,Undead,19,27,"Acid, Bludgeoning, Cold, Fire, Necrotic, Piercing, Slashing",NA,"Lightning, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Winter Wolf,Winter Wolf,3,Large,Monstrosity,13,75,NA,NA,Cold
+Worg,Worg,0.5,Large,Fey,13,26,NA,NA,NA
+Wraith,Wraith,5,Medium or Small,Undead,13,67,"Acid, Bludgeoning, Cold, Fire, Piercing, Slashing",NA,"Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+Wyvern,Wyvern,6,Large,Dragon,14,127,NA,NA,NA
+Xorn,Xorn,5,Medium,Elemental,19,84,NA,NA,"Poison; Paralyzed, Petrified, Poisoned"
+Zombie,Zombies,0.25,Medium,Undead,8,15,NA,NA,"Poison; Exhaustion, Poisoned"
+Ogre Zombie,Zombies,2,Large,Undead,8,85,NA,NA,"Poison; Exhaustion, Poisoned"
+Allosaurus,Animals,2,Large,Beast,13,51,NA,NA,NA
+Ankylosaurus,Animals,3,Huge,Beast,15,68,NA,NA,NA
+Ape,Animals,0.5,Medium,Beast,12,19,NA,NA,NA
+Archelon,Animals,4,Huge,Beast,17,90,NA,NA,NA
+Baboon,Animals,0,Small,Beast,12,3,NA,NA,NA
+Badger,Animals,0,Tiny,Beast,11,5,Poison,NA,NA
+Bat,Animals,0,Tiny,Beast,12,1,NA,NA,NA
+Black Bear,Animals,0.5,Medium,Beast,11,19,NA,NA,NA
+Blood Hawk,Animals,0.125,Small,Beast,12,7,NA,NA,NA
+Boar,Animals,0.25,Medium,Beast,11,13,NA,NA,NA
+Brown Bear,Animals,1,Large,Beast,11,22,NA,NA,NA
+Camel,Animals,0.125,Large,Beast,10,17,NA,NA,NA
+Cat,Animals,0,Tiny,Beast,12,2,NA,NA,NA
+Constrictor Snake,Animals,0.25,Large,Beast,13,13,NA,NA,NA
+Crab,Animals,0,Tiny,Beast,11,3,NA,NA,NA
+Crocodile,Animals,0.5,Large,Beast,12,13,NA,NA,NA
+Deer,Animals,0,Medium,Beast,13,4,NA,NA,NA
+Dire Wolf,Animals,1,Large,Beast,14,22,NA,NA,NA
+Draft Horse,Animals,0.25,Large,Beast,10,15,NA,NA,NA
+Eagle,Animals,0,Small,Beast,12,4,NA,NA,NA
+Elephant,Animals,4,Huge,Beast,12,76,NA,NA,NA
+Elk,Animals,0.25,Large,Beast,10,11,NA,NA,NA
+Flying Snake,Animals,0.125,Tiny,Monstrosity,14,5,NA,NA,NA
+Frog,Animals,0,Tiny,Beast,11,1,NA,NA,NA
+Giant Ape,Animals,7,Huge,Beast,12,168,NA,NA,NA
+Giant Badger,Animals,0.25,Medium,Beast,13,15,Poison,NA,NA
+Giant Bat,Animals,0.25,Large,Beast,13,22,NA,NA,NA
+Giant Boar,Animals,2,Large,Beast,13,42,NA,NA,NA
+Giant Centipede,Animals,0.25,Small,Beast,14,9,NA,NA,NA
+Giant Constrictor Snake,Animals,2,Huge,Beast,12,60,NA,NA,NA
+Giant Crab,Animals,0.125,Medium,Beast,15,13,NA,NA,NA
+Giant Crocodile,Animals,5,Huge,Beast,14,85,NA,NA,NA
+Giant Eagle,Animals,1,Large,Celestial,13,26,"Necrotic, Radiant",NA,NA
+Giant Elk,Animals,2,Huge,Celestial,14,42,"Necrotic, Radiant",NA,NA
+Giant Fire Beetle,Animals,0,Small,Beast,13,4,Fire,NA,NA
+Giant Frog,Animals,0.25,Medium,Beast,11,18,NA,NA,NA
+Giant Goat,Animals,0.5,Large,Beast,11,19,NA,NA,NA
+Giant Hyena,Animals,1,Large,Beast,12,45,NA,NA,NA
+Giant Lizard,Animals,0.25,Large,Beast,12,19,NA,NA,NA
+Giant Octopus,Animals,1,Large,Beast,11,45,NA,NA,NA
+Giant Owl,Animals,0.25,Large,Celestial,12,19,"Necrotic, Radiant",NA,NA
+Giant Rat,Animals,0.125,Small,Beast,13,7,NA,NA,NA
+Giant Scorpion,Animals,3,Large,Beast,15,52,NA,NA,NA
+Giant Seahorse,Animals,0.5,Large,Beast,14,16,NA,NA,NA
+Giant Shark,Animals,5,Huge,Beast,13,92,NA,NA,NA
+Giant Spider,Animals,1,Large,Beast,14,26,NA,NA,NA
+Giant Toad,Animals,1,Large,Beast,11,39,NA,NA,NA
+Giant Venomous Snake,Animals,0.25,Medium,Beast,14,11,NA,NA,NA
+Giant Vulture,Animals,1,Large,Monstrosity,10,25,Necrotic,NA,NA
+Giant Wasp,Animals,0.5,Medium,Beast,13,22,NA,NA,NA
+Giant Weasel,Animals,0.125,Medium,Beast,13,9,NA,NA,NA
+Giant Wolf Spider,Animals,0.25,Medium,Beast,13,11,NA,NA,NA
+Goat,Animals,0,Medium,Beast,10,4,NA,NA,NA
+Hawk,Animals,0,Tiny,Beast,13,1,NA,NA,NA
+Hippopotamus,Animals,4,Large,Beast,14,82,NA,NA,NA
+Hunter Shark,Animals,2,Large,Beast,12,45,NA,NA,NA
+Hyena,Animals,0,Medium,Beast,11,5,NA,NA,NA
+Jackal,Animals,0,Small,Beast,12,3,NA,NA,NA
+Killer Whale,Animals,3,Huge,Beast,12,90,NA,NA,NA
+Lion,Animals,1,Large,Beast,12,22,NA,NA,NA
+Lizard,Animals,0,Tiny,Beast,10,2,NA,NA,NA
+Mammoth,Animals,6,Huge,Beast,13,126,NA,NA,NA
+Mastiff,Animals,0.125,Medium,Beast,12,5,NA,NA,NA
+Mule,Animals,0.125,Medium,Beast,10,11,NA,NA,NA
+Octopus,Animals,0,Small,Beast,12,3,NA,NA,NA
+Owl,Animals,0,Tiny,Beast,11,1,NA,NA,NA
+Panther,Animals,0.25,Medium,Beast,13,13,NA,NA,NA
+Piranha,Animals,0,Tiny,Beast,13,1,NA,NA,NA
+Plesiosaurus,Animals,2,Large,Beast,13,68,NA,NA,NA
+Polar Bear,Animals,2,Large,Beast,12,42,Cold,NA,NA
+Pony,Animals,0.125,Medium,Beast,10,11,NA,NA,NA
+Pteranodon,Animals,0.25,Medium,Beast,13,13,NA,NA,NA
+Rat,Animals,0,Tiny,Beast,10,1,NA,NA,NA
+Raven,Animals,0,Tiny,Beast,12,2,NA,NA,NA
+Reef Shark,Animals,0.5,Medium,Beast,12,22,NA,NA,NA
+Rhinoceros,Animals,2,Large,Beast,13,45,NA,NA,NA
+Riding Horse,Animals,0.25,Large,Beast,11,13,NA,NA,NA
+Saber-Toothed Tiger,Animals,2,Large,Beast,13,52,NA,NA,NA
+Scorpion,Animals,0,Tiny,Beast,11,1,NA,NA,NA
+Seahorse,Animals,0,Tiny,Beast,12,1,NA,NA,NA
+Spider,Animals,0,Tiny,Beast,12,1,NA,NA,NA
+Swarm of Bats,Animals,0.25,Large,Swarm of Tiny Beasts,12,11,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Swarm of Insects,Animals,0.5,Medium,Swarm of Tiny Beasts,11,19,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Swarm of Piranhas,Animals,1,Medium,Swarm of Tiny Beasts,13,28,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Swarm of Rats,Animals,0.25,Medium,Swarm of Tiny Beasts,10,14,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Swarm of Ravens,Animals,0.25,Medium,Swarm of Tiny Beasts,12,11,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Swarm of Venomous Snakes,Animals,2,Medium,Swarm of Tiny Beasts,14,36,"Bludgeoning, Piercing, Slashing",NA,"Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+Tiger,Animals,1,Large,Beast,13,30,NA,NA,NA
+Triceratops,Animals,5,Huge,Beast,14,114,NA,NA,NA
+Tyrannosaurus Rex,Animals,8,Huge,Beast,13,136,NA,NA,NA
+Venomous Snake,Animals,0.125,Tiny,Beast,12,5,NA,NA,NA
+Vulture,Animals,0,Medium,Beast,10,5,NA,NA,NA
+Warhorse,Animals,0.5,Large,Beast,11,19,NA,NA,NA
+Weasel,Animals,0,Tiny,Beast,13,1,NA,NA,NA
+Wolf,Animals,0.25,Medium,Beast,12,11,NA,NA,NA

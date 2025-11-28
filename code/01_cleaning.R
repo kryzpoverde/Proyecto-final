@@ -4,6 +4,7 @@
 # Autora: Golondrina Segura
 
 # Librerías
+
 library(tidyverse)
 
 # Leer datos raw
