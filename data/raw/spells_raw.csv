@@ -46,8 +46,38 @@ Speed 30 ft.
 
 
 
-  Mod Save STR 16 +3 +3 DEX 10 +0 +0 CON 10 +0 +0
-  Mod Save INT 3 −4 −4 WIS 3 −4 −4 CHA 1 −5 −5
+
+ 
+ Mod
+ Save
+ STR
+ 16
+ +3
+ +3
+ DEX
+ 10
+ +0
+ +0
+ CON
+ 10
+ +0
+ +0
+
+ 
+ Mod
+ Save
+ INT
+ 3
+ −4
+ −4
+ WIS
+ 3
+ −4
+ −4
+ CHA
+ 1
+ −5
+ −5
 
 
 Immunities Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned
@@ -94,10 +124,17 @@ Augury,2,divination,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,1 minute or Rit
 
 Omens
 
-Omen	For Results That Will Be...	Weal	Good	
-Woe	Bad	
-Weal and woe	Good and bad	
-Indifference	Neither good nor bad	
+
+Omen	
+For Results That Will Be...	
+Weal	
+Good	
+Woe	
+Bad	
+Weal and woe	
+Good and bad	
+Indifference	
+Neither good nor bad	
 The spell doesn’t account for circumstances, such as other spells, that might change the results.
 If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer."
 Aura of Life,4,abjuration,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Self,self,TRUE,FALSE,FALSE,NA,"Concentration, up to 10 minutes",TRUE,"An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can’t be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains 1 Hit Point."
@@ -260,7 +297,16 @@ For the duration, you can take a Bonus Action to designate a direction that is h
 Cone of Cold,5,evocation,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Self,self,TRUE,TRUE,TRUE,a small crystal or glass cone,Instantaneous,FALSE,"You unleash a blast of cold air. Each creature in a 60-foot Cone originating from you makes a Constitution saving throw, taking 8d8 Cold damage on a failed save or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 5."
 Confusion,4,enchantment,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,90 feet,feet,TRUE,TRUE,TRUE,three nut shells,"Concentration, up to 1 minute",TRUE,"Each creature in a 10-foot-radius Sphere centered on a point you choose within range must succeed on a Wisdom saving throw, or that target can’t take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below.
-1d10 Behavior for the Turn 1 The target doesn’t take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4, west. 2–6 The target doesn’t move or take actions. 7–8 The target doesn’t move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action. 9–10 The target chooses its behavior.
+1d10
+ Behavior for the Turn
+ 1
+ The target doesn’t take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4, west.
+ 2–6
+ The target doesn’t move or take actions.
+ 7–8
+ The target doesn’t move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action.
+ 9–10
+ The target chooses its behavior.
 At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success.
 Using a Higher-Level Spell Slot. The Sphere’s radius increases by 5 feet for each spell slot level above 4."
 Conjure Animals,3,conjuration,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,60 feet,feet,TRUE,TRUE,FALSE,NA,"Concentration, up to 10 minutes",TRUE,"You conjure nature spirits that appear as a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits’ animal form, such as wolves, serpents, or birds.
@@ -306,28 +352,53 @@ When you change the weather conditions, find a current condition on the followin
 
 Precipitation
 
-Stage	Condition	1	Clear	
-2	Light clouds	
-3	Overcast or ground fog	
-4	Rain, hail, or snow	
-5	Torrential rain, driving hail, or blizzard	
+
+Stage	
+Condition	
+1	
+Clear	
+2	
+Light clouds	
+3	
+Overcast or ground fog	
+4	
+Rain, hail, or snow	
+5	
+Torrential rain, driving hail, or blizzard	
 
 Temperature
 
-Stage	Condition	1	Heat wave	
-2	Hot	
-3	Warm	
-4	Cool	
-5	Cold	
-6	Freezing	
+
+Stage	
+Condition	
+1	
+Heat wave	
+2	
+Hot	
+3	
+Warm	
+4	
+Cool	
+5	
+Cold	
+6	
+Freezing	
 
 Wind
 
-Stage	Condition	1	Calm	
-2	Moderate wind	
-3	Strong wind	
-4	Gale	
-5	Storm"
+
+Stage	
+Condition	
+1	
+Calm	
+2	
+Moderate wind	
+3	
+Strong wind	
+4	
+Gale	
+5	
+Storm"
 Counterspell,3,abjuration,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,"Reaction, which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components",FALSE,FALSE,TRUE,FALSE,NA,"you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components",60 feet,feet,FALSE,TRUE,FALSE,NA,Instantaneous,FALSE,"You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn’t expended."
 Create Food and Water,3,conjuration,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,30 feet,feet,TRUE,TRUE,FALSE,NA,Instantaneous,FALSE,"You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
 Create or Destroy Water,1,transmutation,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,30 feet,feet,TRUE,TRUE,TRUE,a mix of water and sand,Instantaneous,FALSE,"You do one of the following:
@@ -343,11 +414,19 @@ The spell’s duration depends on the object’s material, as shown in the Mater
 
 Materials
 
-Material	Duration	Vegetable matter	24 hours	
-Stone or crystal	12 hours	
-Precious metals	1 hour	
-Gems	10 minutes	
-Adamantine or mithral	1 minute	
+
+Material	
+Duration	
+Vegetable matter	
+24 hours	
+Stone or crystal	
+12 hours	
+Precious metals	
+1 hour	
+Gems	
+10 minutes	
+Adamantine or mithral	
+1 minute	
 Using a Higher-Level Spell Slot. The Cube increases by 5 feet for each spell slot level above 5."
 Cure Wounds,1,abjuration,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Touch,touch,TRUE,TRUE,FALSE,NA,Instantaneous,FALSE,"A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.
 Using a Higher-Level Spell Slot. The healing increases by 2d8 for each spell slot level above 1.
@@ -427,10 +506,17 @@ Divine Smite,1,evocation,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,"Bonus A
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1."
 Divine Word,7,evocation,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Bonus Action,TRUE,TRUE,FALSE,FALSE,NA,NA,30 feet,feet,TRUE,FALSE,FALSE,NA,Instantaneous,FALSE,"You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 Hit Points or fewer suffers an effect based on its current Hit Points, as shown in the Divine Word Effects table. Regardless of its Hit Points, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to the current plane for 24 hours by any means short of a Wish spell.
 Divine Word Effects
-Hit Points	Effect	0–20	The target dies.	
-21–30	The target has the Blinded, Deafened, and Stunned conditions for 1 hour.	
-31–40	The target has the Blinded and Deafened conditions for 10 minutes.	
-41–50	The target has the Deafened condition for 1 minute."
+
+Hit Points	
+Effect	
+0–20	
+The target dies.	
+21–30	
+The target has the Blinded, Deafened, and Stunned conditions for 1 hour.	
+31–40	
+The target has the Blinded and Deafened conditions for 10 minutes.	
+41–50	
+The target has the Deafened condition for 1 minute."
 Dominate Beast,4,enchantment,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,60 feet,feet,TRUE,TRUE,FALSE,NA,"Concentration, up to 1 minute",TRUE,"One Beast you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.
 You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as “Attack that creature,” “Move over there,” or “Fetch that object.” The target does its best to obey on its turn. If it completes an order and doesn’t receive further direction from you, it acts and moves as it likes, focusing on protecting itself.
 You can command the target to take a Reaction but must take your own Reaction to do so.
@@ -575,8 +661,38 @@ Speed 60 ft., Fly 60 ft. (requires level 4+ spell)
 
 
 
-  Mod Save STR 18 +4 +4 DEX 12 +1 +1 CON 14 +2 +2
-  Mod Save INT 6 −2 −2 WIS 12 +1 +1 CHA 8 −1 −1
+
+ 
+ Mod
+ Save
+ STR
+ 18
+ +4
+ +4
+ DEX
+ 12
+ +1
+ +1
+ CON
+ 14
+ +2
+ +2
+
+ 
+ Mod
+ Save
+ INT
+ 6
+ −2
+ −2
+ WIS
+ 12
+ +1
+ +1
+ CHA
+ 8
+ −1
+ −1
 
 
 Senses Passive Perception 11
@@ -728,8 +844,38 @@ Speed 40 ft., Climb 40 ft., Fly 40 ft. (Wasp only)
 
 
 
-  Mod Save STR 17 +3 +3 DEX 13 +1 +1 CON 15 +2 +2
-  Mod Save INT 4 −3 −3 WIS 14 +2 +2 CHA 3 −4 −4
+
+ 
+ Mod
+ Save
+ STR
+ 17
+ +3
+ +3
+ DEX
+ 13
+ +1
+ +1
+ CON
+ 15
+ +2
+ +2
+
+ 
+ Mod
+ Save
+ INT
+ 4
+ −3
+ −3
+ WIS
+ 14
+ +2
+ +2
+ CHA
+ 3
+ −4
+ −4
 
 
 Senses Darkvision 60 ft., Passive Perception 12
@@ -1331,14 +1477,25 @@ Prismatic Spray,7,evocation,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Action,
 
 Prismatic Rays
 
-1d8	Ray	1	Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage.	
-2	Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage.	
-3	Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage.	
-4	Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage.	
-5	Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage.	
-6	Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind.	
-7	Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice).	
-8	Special. The target is struck by two rays. Roll twice, rerolling any 8."
+
+1d8	
+Ray	
+1	
+Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage.	
+2	
+Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage.	
+3	
+Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage.	
+4	
+Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage.	
+5	
+Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage.	
+6	
+Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind.	
+7	
+Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice).	
+8	
+Special. The target is struck by two rays. Roll twice, rerolling any 8."
 Prismatic Wall,9,abjuration,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,60 feet,feet,TRUE,TRUE,FALSE,NA,10 minutes,FALSE,"A shimmering, multicolored plane of light forms a vertical opaque wall—up to 90 feet long, 30 feet high, and 1 inch thick—centered on a point within range. Alternatively, you shape the wall into a globe up to 30 feet in diameter centered on a point within range. The wall lasts for the duration. If you position the wall in a space occupied by a creature, the spell ends instantly without effect.
 The wall sheds Bright Light within 100 feet and Dim Light for an additional 100 feet. You and creatures you designate when you cast the spell can pass through and be near the wall without harm. If another creature that can see the wall moves within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or have the Blinded condition for 1 minute.
 The wall consists of seven layers, each with a different color. When a creature reaches into or passes through the wall, it does so one layer at a time through all the layers. Each layer forces the creature to make a Dexterity saving throw or be affected by that layer’s properties as described in the Prismatic Layers table.
@@ -1346,13 +1503,23 @@ The wall, which has AC 10, can be destroyed one layer at a time, in order from r
 
 Prismatic Layers
 
-Order	Effects	1	Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage. Additional Effects: Nonmagical ranged attacks can’t pass through this layer, which is destroyed if it takes at least 25 Cold damage.	
-2	Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage. Additional Effects: Magical ranged attacks can’t pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind).	
-3	Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 60 Force damage.	
-4	Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage. Additional Effects: A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.	
-5	Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 25 Fire damage.	
-6	Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind. Additional Effects: Spells can’t be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell.	
-7	Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice). Additional Effects: This layer is destroyed by Dispel Magic."
+
+Order	
+Effects	
+1	
+Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage. Additional Effects: Nonmagical ranged attacks can’t pass through this layer, which is destroyed if it takes at least 25 Cold damage.	
+2	
+Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage. Additional Effects: Magical ranged attacks can’t pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind).	
+3	
+Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 60 Force damage.	
+4	
+Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage. Additional Effects: A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.	
+5	
+Blue. Failed Save: 12d6 Cold damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 25 Fire damage.	
+6	
+Indigo. Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind. Additional Effects: Spells can’t be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell.	
+7	
+Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice). Additional Effects: This layer is destroyed by Dispel Magic."
 Produce Flame,0,conjuration,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,Bonus Action,TRUE,TRUE,FALSE,FALSE,NA,NA,Self,self,TRUE,TRUE,FALSE,NA,10 minutes,FALSE,"A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
 Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
 Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
@@ -1403,7 +1570,28 @@ Ray of Sickness,1,necromancy,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Actio
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1."
 Regenerate,7,transmutation,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,1 minute,FALSE,FALSE,FALSE,FALSE,1 minute,NA,Touch,touch,TRUE,TRUE,TRUE,a prayer wheel,1 hour,FALSE,"A creature you touch regains 4d8 + 15 Hit Points. For the duration, the target regains 1 Hit Point at the start of each of its turns, and any severed body parts regrow after 2 minutes."
 Reincarnate,5,necromancy,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,1 hour,FALSE,FALSE,FALSE,FALSE,1 hour,NA,Touch,touch,TRUE,TRUE,TRUE,"rare oils worth 1,000+ GP, which the spell consumes",Instantaneous,FALSE,"You touch a dead Humanoid or a piece of one. If the creature has been dead no longer than 10 days, the spell forms a new body for it and calls the soul to enter that body. Roll 1d10 and consult the table below to determine the body’s species, or the DM chooses another playable species.
-1d10 Species 1 Aasimar 2 Dragonborn 3 Dwarf 4 Elf 5 Gnome 6 Goliath 7 Halfling 8 Human 9 Orc 10 Tiefling
+1d10
+ Species
+ 1
+ Aasimar
+ 2
+ Dragonborn
+ 3
+ Dwarf
+ 4
+ Elf
+ 5
+ Gnome
+ 6
+ Goliath
+ 7
+ Halfling
+ 8
+ Human
+ 9
+ Orc
+ 10
+ Tiefling
 The reincarnated creature makes any choices that a species’ description offers, and the creature recalls its former life. It retains the capabilities it had in its original form, except it loses the traits of its previous species and gains the traits of its new one."
 Remove Curse,3,abjuration,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Touch,touch,TRUE,TRUE,FALSE,NA,Instantaneous,FALSE,"At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s Attunement to the object so it can be removed or discarded."
 Resistance,0,abjuration,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Touch,touch,TRUE,TRUE,FALSE,NA,"Concentration, up to 1 minute",TRUE,"You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn."
@@ -1415,7 +1603,8 @@ Reverse Gravity,7,transmutation,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,Act
 If a ceiling or an anchored object is encountered in this upward fall, creatures and objects strike it just as they would during a downward fall. If an affected creature or object reaches the Cylinder’s top without striking anything, it hovers there for the duration. When the spell ends, affected objects and creatures fall downward."
 Revivify,3,necromancy,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Touch,touch,TRUE,TRUE,TRUE,"a diamond worth 300+ GP, which the spell consumes",Instantaneous,FALSE,"You touch a creature that has died within the last minute. That creature revives with 1 Hit Point. This spell can’t revive a creature that has died of old age, nor does it restore any missing body parts."
 Rope Trick,2,transmutation,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,Touch,touch,TRUE,TRUE,TRUE,a segment of rope,1 hour,FALSE,"You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope’s upper end, an Invisible 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.
-The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can’t pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends.
+The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can’t pass into or out of the space, but creatures inside it can see
+ through the portal. Anything inside the space drops out when the spell ends.
 Spells (S)
 Sacred Flame
 Evocation Cantrip (Cleric)
@@ -1445,8 +1634,22 @@ The spell ends if the warded creature makes an attack roll, casts a spell, or de
 Scorching Ray,2,evocation,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Action,TRUE,FALSE,FALSE,FALSE,NA,NA,120 feet,feet,TRUE,TRUE,FALSE,NA,Instantaneous,FALSE,"You hurl three fiery rays. You can hurl them at one target within range or at several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 Fire damage.
 Using a Higher-Level Spell Slot. You create one additional ray for each spell slot level above 2."
 Scrying,5,divination,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,10 minutes,FALSE,FALSE,FALSE,FALSE,10 minutes,NA,Self,self,TRUE,TRUE,TRUE,"a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled font","Concentration, up to 10 minutes",TRUE,"You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn’t know what it is making the save against, only that it feels uneasy.
-Your Knowledge of the Target Is... Save Modifier Secondhand (heard of the target) +5 Firsthand (met the target) +0 Extensive (know the target well) −5
-You Have the Target’s... Save Modifier Picture or other likeness −2 Garment or other possession −4 Body part, lock of hair, or bit of nail −10
+Your Knowledge of the Target Is...
+ Save Modifier
+ Secondhand (heard of the target)
+ +5
+ Firsthand (met the target)
+ +0
+ Extensive (know the target well)
+ −5
+You Have the Target’s...
+ Save Modifier
+ Picture or other likeness
+ −2
+ Garment or other possession
+ −4
+ Body part, lock of hair, or bit of nail
+ −10
 On a successful save, the target isn’t affected, and you can’t use this spell on it again for 24 hours.
 On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.
 Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn’t move."
@@ -1552,8 +1755,38 @@ Speed 30 ft., Fly 60 ft., Swim 30 ft.
 
 
 
-  Mod Save STR 19 +4 +4 DEX 14 +2 +2 CON 17 +3 +3
-  Mod Save INT 10 +0 +0 WIS 14 +2 +2 CHA 14 +2 +2
+
+ 
+ Mod
+ Save
+ STR
+ 19
+ +4
+ +4
+ DEX
+ 14
+ +2
+ +2
+ CON
+ 17
+ +3
+ +3
+
+ 
+ Mod
+ Save
+ INT
+ 10
+ +0
+ +0
+ WIS
+ 14
+ +2
+ +2
+ CHA
+ 14
+ +2
+ +2
 
 
 Resistances Acid, Cold, Fire, Lightning, Poison
@@ -1650,12 +1883,42 @@ The destination you choose must be known to you, and it must be on the same plan
 
 Teleportation Outcome
 
-Familiarity	Mishap	Similar Area	Off Target	On Target	Permanent circle	—	—	—	01–00	
-Linked object	—	—	—	01–00	
-Very familiar	01–05	06–13	14–24	25–00	
-Seen casually	01–33	34–43	44–53	54–00	
-Viewed once or described	01–43	44–53	54–73	74–00	
-False destination	01–50	51–00	—	—	
+
+Familiarity	
+Mishap	
+Similar Area	
+Off Target	
+On Target	
+Permanent circle	
+—	
+—	
+—	
+01–00	
+Linked object	
+—	
+—	
+—	
+01–00	
+Very familiar	
+01–05	
+06–13	
+14–24	
+25–00	
+Seen casually	
+01–33	
+34–43	
+44–53	
+54–00	
+Viewed once or described	
+01–43	
+44–53	
+54–73	
+74–00	
+False destination	
+01–50	
+51–00	
+—	
+—	
 Familiarity. Here are the meanings of the terms in the table’s Familiarity column:
 “Permanent circle” means a permanent teleportation circle whose sigil sequence you know.
 
