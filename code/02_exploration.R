@@ -21,25 +21,23 @@ glimpse(monsters) #existen datos NA en filas de resistencias, vulnerabilidades e
 # Vamos a empezar revisando cuántos hechizos hay por nivel
 
 spells_por_nivel <- spells %>%
-  count(level, name = "cantidad_hechizos")
+  count(level, name = "n_spells")
 spells_por_nivel
 
 # Graficar resultado
 
-ggplot(spells_por_nivel, aes(x = level, y = cantidad_hechizos)) +
-  geom_col(fill = "#9333FF", alpha = 0.6) +
-  scale_x_continuous(breaks = 0:9) +  
-  scale_y_continuous(breaks = seq(0, 60, by = 5)) +  
+ggplot(spells_por_nivel, aes(x = level, y = n_spells)) +
+  geom_col() +
   labs(
-    title = "Cantidad de hechizos por nivel",
-    x = "Nivel del hechizo",
-    y = "Número de hechizos"
-  ) +
-  theme_classic()
+    title = "Hechizos por nivel",
+    x = "Nivel",
+    y = "Cantidad"
+  )
+
 
 #Ahora vamos a analizar hechizos por su disponibilidad y cantidad para distintas clases
 
-#Primero seleccionamos las columnas que nos interesan y las pasamos a formato largo para gráficos posteriores
+#Primero seleccionamos las columnas que nos interesan y las pasamos a formato largo para análisis posteriores
 
 spell_long <- spells %>%
   select(level, bard, cleric, druid, paladin, ranger, sorcerer, warlock, wizard) %>%
@@ -54,14 +52,14 @@ spell_long <- spells %>%
 
 spell_long %>%
   count(clase, name = "n_hechizos") %>%
-  ggplot(aes(x = reorder(clase, n_hechizos), y = n_hechizos)) +
-  geom_col(fill = "#9333FF") +
-  coord_flip() +
+  ggplot(aes(x = clase, y = n_hechizos)) +
+  geom_col() +
   labs(
-    title = "Total de hechizos disponibles por clase",
+    title = "Hechizos por clase",
     x = "Clase",
-    y = "Número de hechizos"
+    y = "Cantidad"
   )
+
 
 #Ahora ver cuántos hechizos (por nivel) tiene disponible cada clase con un heatmap
 
@@ -69,44 +67,23 @@ heatmap_data <- spell_long %>%
   count(clase, level, name = "n_hechizos")
 
 ggplot(heatmap_data, aes(x = level, y = clase, fill = n_hechizos)) +
-  geom_tile(color = "white") +
-  scale_fill_gradient(low = "lightyellow", high = "darkred") +
-  scale_x_continuous(breaks = 0:9) +
+  geom_tile() +
   labs(
-    title = "Distribución del poder mágico entre clases de D&D",
-    x = "Nivel del hechizo",
-    y = "Clase",
-    fill = "Hechizos"
-  ) +
-  theme_classic() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    title = "Hechizos por nivel y clase",
+    x = "Nivel",
+    y = "Clase"
+  )
+
 
 #Ahora pasamos a la base de montruos, primero revisamos cantidad de montruos por CR (challenge rating)
 
-#Para esto, vamos a agregar una columna que agrupa
-#los monstruos según su CR (noob, intermedio, avanzado, épico y legendario)
-
-monsters <- monsters %>%
-  mutate(cr_group = case_when(
-    cr <= 2 ~ "Noob",
-    cr <= 6 ~ "Intermedio",
-    cr <= 10 ~ "Avanzado",
-    cr <= 16 ~ "Épico",
-    TRUE ~ "Legendario"
-  ))
-
-#Ahora graficamos el resultado
-
-ggplot(monsters, aes(x = factor(cr_group,
-                                levels = c("Noob", "Intermedio", "Avanzado", "Épico", "Legendario")))) +
-  geom_bar(fill = "#FF8F78", alpha = 0.8) +
-  scale_y_continuous(breaks = seq(0, max(table(monsters$cr_group)), by = 50)) +
+ggplot(monsters, aes(x = cr_group)) +
+  geom_bar() +
   labs(
-    title = "Distribución de monstruos por nivel de amenaza",
-    x = "Nivel de amenaza",
-    y = "Cantidad de monstruos"
-  ) +
-  theme_classic()
+    title = "Monstruos por categoría de CR",
+    x = "Categoría de CR",
+    y = "Cantidad"
+  )
 
 #Vamos a ver número de monstruos por vulnerabilidad
 
@@ -134,30 +111,21 @@ vuln_resumen
 
 #Graficamos
 
-ggplot(vuln_resumen, aes(x = n_monstruos,
-                         y = reorder(vulnerabilities, n_monstruos))) +
-  geom_col(fill = "pink") +
+ggplot(vuln_resumen, aes(x = vulnerabilities, y = n_monstruos)) +
+  geom_col() +
   labs(
-    title = "Cantidad de monstruos vulnerables por tipo de daño",
-    x = "Número de monstruos",
-    y = "Tipo de daño"
-  ) +
-  scale_y_discrete(labels = function(x) stringr::str_trunc(x, 16, ellipsis = "")) +
-  theme_minimal()
+    title = "Monstruos por vulnerabilidad",
+    x = "Tipo de vulnerabilidad",
+    y = "Cantidad"
+  )
 
 #Repetimos el proceso para inmunidades
 
 immune <- monsters %>%
   select(immunities) %>%
   separate_rows(immunities, sep = ", |; ") %>%
-  mutate(
-    immunities = str_trim(immunities),
-    immunities = case_when(
-      str_detect(immunities, regex("Charmed", ignore_case = TRUE)) ~ "Charmed", #aquí agregué un paso extra para normalizar la categoria "charmed" ya que venían dos casos escrutis distintos pero querían decir lo mismo.
-      TRUE ~ immunities
-    )
-  ) %>%
   filter(immunities != "", !is.na(immunities))
+
 immune_resumen <- immune %>%
   count(immunities, name = "n_monstruos")
 immune_resumen
@@ -165,19 +133,53 @@ immune_resumen
 
 #Graficamos
 
-ggplot(immune_resumen,
-       aes(x = n_monstruos,
-           y = reorder(immunities, n_monstruos))) +
-  geom_col(fill = "orange") +
+ggplot(immune_resumen, aes(x = immunities, y = n_monstruos)) +
+  geom_col() +
   labs(
-    title = "Cantidad de monstruos inmunes a condiciones",
-    x = "Número de monstruos",
-    y = "Tipo de condición"
-  ) +
-  scale_y_discrete(labels = function(x) stringr::str_trunc(x, 20, ellipsis = "")) +
-  theme_classic()
+    title = "Monstruos por condición de inmunidad",
+    x = "Tipo de condición",
+    y = "Cantidad"
+  )
 
-#Comparación de ambos dataset
+
+#Por último, vamos a comparar la distribución de hechizos y monstruos a través de los niveles
+#Para esto elegí un gráfico de lineas comparativas
+
+#Escalar los CR de los monstruos y dejarlos de 0 a 9 igual que los hechizos
+
+monsters_scaled <- monsters %>%
+  mutate(cr_bin = floor((cr / max(cr, na.rm = TRUE)) * 9))
+
+#Proporcionar hechizos y monstruos
+
+spells_por_nivel <- spells_por_nivel %>%
+  mutate(prop_spells = n_spells / sum(n_spells))
+monsters_por_nivel <- monsters_scaled %>%
+  count(cr_bin, name = "n_monsters")
+monsters_por_nivel <- monsters_por_nivel %>%
+  mutate(prop_monsters = n_monsters / sum(n_monsters))
+
+#Unimos ambos datasets en uno para graficar
+
+comparativo <- bind_rows(
+  spells_por_nivel %>% transmute(nivel = level, proporcion = prop_spells, tipo = "Hechizos"),
+  monsters_por_nivel %>% transmute(nivel = cr_bin, proporcion = prop_monsters, tipo = "Monstruos")
+)
+
+#Graficamos
+
+ggplot(comparativo, aes(x = nivel, y = proporcion, color = tipo)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    title = "Comparación de distribución relativa entre hechizos y monstruos",
+    x = "Nivel / CR equivalente",
+    y = "Proporción",
+    color = "Categoría"
+  )
+
+
+
 
 
 
