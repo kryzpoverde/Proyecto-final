@@ -1,8 +1,17 @@
 ---
-title: "proyecto_final"
+title: "Análisis del universo de D&D"
 author: "Golondrina Segura"
-format: html
-editor: visual
+format:
+  html:
+    theme: minty
+    echo: false
+    toc: true           
+    toc-location: right 
+    number-sections: false
+    smooth-scroll: true
+    title-block-banner: "#5c2e91" 
+    page-layout: article           
+lang: es
 ---
 
 ## Dungeons & Dragons

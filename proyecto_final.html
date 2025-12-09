@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Golondrina Segura">
+
+<title>Análisis del universo de D&amp;D</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="proyecto_final_files/libs/clipboard/clipboard.min.js"></script>
+<script src="proyecto_final_files/libs/quarto-html/quarto.js"></script>
+<script src="proyecto_final_files/libs/quarto-html/popper.min.js"></script>
+<script src="proyecto_final_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="proyecto_final_files/libs/quarto-html/anchor.min.js"></script>
+<link href="proyecto_final_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="proyecto_final_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="proyecto_final_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="proyecto_final_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="proyecto_final_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #5c2e91;
+      }
+</style>
+
+
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Análisis del universo de D&amp;D</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
+      <div class="quarto-title-meta-contents">
+               <p>Golondrina Segura </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#dungeons-dragons" id="toc-dungeons-dragons" class="nav-link active" data-scroll-target="#dungeons-dragons">Dungeons &amp; Dragons</a></li>
+  <li><a href="#hechizos" id="toc-hechizos" class="nav-link" data-scroll-target="#hechizos">Hechizos</a>
+  <ul class="collapse">
+  <li><a href="#hechizos-por-clase" id="toc-hechizos-por-clase" class="nav-link" data-scroll-target="#hechizos-por-clase">Hechizos por clase</a></li>
+  <li><a href="#distribución-de-poder-entre-las-clases" id="toc-distribución-de-poder-entre-las-clases" class="nav-link" data-scroll-target="#distribución-de-poder-entre-las-clases">Distribución de poder entre las clases</a></li>
+  </ul></li>
+  <li><a href="#monstruos" id="toc-monstruos" class="nav-link" data-scroll-target="#monstruos">Monstruos</a>
+  <ul class="collapse">
+  <li><a href="#inmunidades" id="toc-inmunidades" class="nav-link" data-scroll-target="#inmunidades">Inmunidades</a></li>
+  <li><a href="#vulnerabilidades" id="toc-vulnerabilidades" class="nav-link" data-scroll-target="#vulnerabilidades">Vulnerabilidades</a></li>
+  </ul></li>
+  <li><a href="#hechizos-vs-monstruos" id="toc-hechizos-vs-monstruos" class="nav-link" data-scroll-target="#hechizos-vs-monstruos">Hechizos VS Monstruos</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="dungeons-dragons" class="level2">
+<h2 class="anchored" data-anchor-id="dungeons-dragons">Dungeons &amp; Dragons</h2>
+<p>Dungeons and dragons o “calabozos y dragones” en español, es un juego de rol narrativo e imaginativo publicado por primera vez en 1947, teniendo distintas ediciones y reglas desde entonces. Se ambienta en un mundo de fantasía medieval con elementos mágicos y culturales inspirados en historias europeas medievales, renacentistas, egipcias, asiáticas, e incluso, nativo americanas. El juego funciona de manera que una persona es el “Dungeon Master” o DM, persona que guiará la narrativa y decidirá el camino de los jugadores a gran escala, mientras que el grupo de jugadores puede ir de 1 a la cantidad que se quiera/pueda.</p>
+<p>La naturaleza del juego permite al jugador personalizar a su personaje de la manera que prefiera. Principalmente existen razas, que determinan cómo se verá el personaje fisicamente.Y clases, que determinan características y habilidades del personaje.</p>
+<p>Además, existen desafíos que los jugadores se pueden encontrar en su travesía, entre estos, monstruos. Estos monstruos tienen su propio set de “características” similares a las que tendría un jugador (vida, debilidades, fortalezas, raza, tamaño, etc) solo que son controlados por el DM.</p>
+<p>Para efectos de este análisis, ocuparemos las reglas y datos de la 5ta edición. Y observaremos tendencias en niveles, dificultades y acceso a hechizos y mosntruos de este mundo.</p>
+<p>Pueden conocer más sobre el juego aquí: <a href="https://www.dndbeyond.com/" class="uri">https://www.dndbeyond.com/</a></p>
+</section>
+<section id="hechizos" class="level1">
+<h1>Hechizos</h1>
+<p>Dentro de las clases que existen en DnD, habrán clases que te permitirán acceder a distintos hechizos de una matriz determinada, distintas clases acceden a distintos tipos/cantidad de hechizos. Y estos mismos pueden ser de distintos niveles, de 0 a 9, para acceder a niveles más altos es necesario que tu personaje suba de nivel, por tanto, tener más horas de experiencia jugando. Por esto es que es interesante saber cómo se distribuye la cantidad de hechizos a través de sus niveles.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/hechizos_por_nivel.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico muestra cómo se distribuyen los hechizos según su nivel de poder, desde nivel 0 (cantrips o trucos) hasta nivel 9, que corresponde a los hechizos más poderosos del juego.</p>
+<p>Se observa que los niveles 1 y 2 concentran la mayor cantidad de hechizos, lo que refleja que gran parte del sistema de magia está diseñado para ser accesible durante las primeras etapas de progresión de los personajes. A medida que los niveles aumentan, el número de hechizos disponibles disminuye progresivamente, lo cual es coherente con la lógica del juego: los hechizos de niveles más altos son más escasos, más poderosos y están reservados para personajes avanzados. Esta distribución también sugiere que el juego trata de ser amigable y dar variedad de elección a gente recién empezando una campaña.</p>
+<section id="hechizos-por-clase" class="level2">
+<h2 class="anchored" data-anchor-id="hechizos-por-clase">Hechizos por clase</h2>
+<p>Como mencioné anteriormente, lo que va a determinar a cantidad de hechizos a disponibilidad del jugador es tanto el nivel, como la clase que seleccione. No todas las clases poseen magia, pero es interesante observar si existe una distribución igualitaria de hechizos dentro de las clases o si algunas clases tienen más acceso que otras.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/hechizos_por_clase.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico muestra cuántos hechizos puede aprender o utilizar cada una de las clases mágicas. La diferencia entre ellas es notable y refleja el rol que cada una desempeña dentro del juego.</p>
+<p>No es de sorprender que wizard o “magos” sobresalgan con casi 200 hechizos disponibles, ya que por naturaleza del juego, esta clase se esfuerza y estudia para aprender hechizos, tomando tiempo para memorizar y conjurar, mientras que otras clases tienen magia “innata” y hasta por hacer pactos con entidades, por lo que es un camino más “fácil” y por tanto, para equilibrar el juego, tienen menos disponibilidad y variedad de hechizos. Además hay que tener en cuenta que hay clases que se caracterizan por tener cierto tipo de magia, como lo son druid y bard, estos son clases enfocadas a estilos de magia particulares: naturaleza y música, respectivamente. Por lo que no se va a ver a un druida conjurando magia espiritual o necromancia, y esto explica su diferencia de aproximádamente 100 hechizos. Por otro lado, también existen clases que la magia no es su rasgo principal, sino un “bonus” que obtiene además de, por ejemplo, rasgos como fuerza física, carisma, etc. Esto se refleja en ranger y paladin y su disponibilidad de menos de 50 hechizos.</p>
+</section>
+<section id="distribución-de-poder-entre-las-clases" class="level2">
+<h2 class="anchored" data-anchor-id="distribución-de-poder-entre-las-clases">Distribución de poder entre las clases</h2>
+<p>Una cosa es saber cúantos hechizos tiene cada clase, pero también importa la calidad de esos hechizos. ¿Es mejor tener 100 hechizos de nivel 1 o 10 hechizos de nivel 9? Veamos cómo se distribuyen los niveles y disponibilidad de hechizos entre clases.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/hechizos_heatmap.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Este heatmap muestra cómo se distribuyen los hechizos disponibles para cada clase de Dungeons &amp; Dragons según su nivel de poder (de 0 a 9). Los colores más intensos indican una mayor cantidad de hechizos disponibles en ese nivel y para esa clase.</p>
+<p>El patrón revela varias diferencias importantes entre clases:</p>
+<ul>
+<li><p>Wizard es nuevamente la clase con mayor amplitud mágica. Presenta una alta concentración de hechizos en casi todos los niveles, especialmente en niveles intermedios (2 y 3), lo que refleja su versatilidad y acceso a una amplia variedad de herramientas mágicas.</p></li>
+<li><p>Sorcerer, bard y druid también muestran distribuciones amplias, especialmente en niveles bajos e intermedios. Como se mencionó antes, estas clases tienen estilos de magia más especializados, pero aun así cuentan con un repertorio significativo a lo largo de toda la progresión del juego.</p></li>
+<li><p>Cleric posee una distribución equilibrada, con más hechizos en niveles bajos y medios. Esto es consistente con su rol de soporte y sanación, donde los conjuros no requieren ser necesariamente de alto nivel para ser efectivos.</p></li>
+<li><p>Warlock, ranger y paladin tienen menos variedad y se concentran principalmente en niveles bajos. e incluso hay niveles que no tienen hechizos. Estas clases combinan habilidades no mágicas con algunos hechizos, por lo que su repertorio es más reducido y especializado.</p></li>
+</ul>
+<p>Aquí se ve cómo varía la complejidad mágica de cada clase y qué tan dependientes son del uso de hechizos en su progresión. Mientras algunas clases basan casi todo su poder en la magia, otras la utilizan solo como complemento.</p>
+</section>
+</section>
+<section id="monstruos" class="level1">
+<h1>Monstruos</h1>
+<p>En DnD, los monstruos representan los principales desafíos que enfrentan los jugadores durante una aventura. Cada criatura posee características únicas, como fuerza, habilidades especiales, resistencias o capacidades mágicas, que determinan qué tan difícil es combatirla. Para reflejar esta dificultad, el juego utiliza el challenge rating (CR) o nivel de amenaza, un indicador numérico que resume cuán peligrosa es una criatura.</p>
+<p>Analizar a los monstruos según su nivel de amenaza permite entender cómo se distribuyen los desafíos del juego, qué tipo de criaturas son más frecuentes y en qué rangos de peligro se concentran.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/monstruos_por_cr.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico muestra que la mayoría de los monstruos del juego se concentran en los niveles de amenaza más bajos. La categoría “noob” (nuevo) agrupa por lejos la mayor cantidad de criaturas, lo que refleja que DnD ofrece una amplia variedad de enemigos diseñados para encuentros tempranos o para grupos menos experimentados. Conforme aumenta el nivel de amenaza, la cantidad de monstruos disponibles disminuye de manera notable.</p>
+<p>Esta distribución tiene sentido desde el diseño del juego, ya que los monstruos de alto CR suelen ser más complejos, poderosos y narrativamente significativos, por lo que aparecen con menor frecuencia y están pensados para situaciones específicas dentro de una campaña y que también pueden llevar varias sesiones en vencerlos. En cambio, los monstruos de bajo CR cumplen un rol fundamental como desafíos recurrentes en las primeras etapas del juego, permitiendo que los jugadores progresen y se familiarizen con las dinámicas antes de enfrentarse a amenazas mayores.</p>
+<section id="inmunidades" class="level2">
+<h2 class="anchored" data-anchor-id="inmunidades">Inmunidades</h2>
+<p>Además de su nivel de amenaza, los monstruos de DnD poseen diversas inmunidades que determinan a qué tipos de daños o condiciones no pueden ser afectados. Estas inmunidades obligan a los jugadores a adaptar sus estrategias y seleccionar hechizos adecuados para superar resistencias especiales.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/monstruos_inmunidad.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico muestra cuántos monstruos poseen inmunidad a distintas condiciones o tipos de daño.<br>
+La inmunidad más frecuente es charmed, lo que indica que muchos monstruos no pueden ser manipulados emocionalmente ni controlados mediante magia de encanto. Esto coincide con criaturas que poseen fuerte voluntad o una naturaleza mágica que las hace difíciles de influenciar.</p>
+<p>Le siguen poisoned y poison, ambas relacionadas con toxinas. Esto refleja que una gran parte del bestiario (muertos vivientes, elementales, criaturas mágicas) simplemente no posee un cuerpo biológico vulnerable al veneno, por lo que estas estrategias de combate suelen ser menos efectivas.</p>
+<p>También destacan inmunidades como fire, exhaustion o lightning, que corresponden a tipos de daño elemental o estados físicos difíciles de aplicar a criaturas no vivas o de naturaleza mágica.</p>
+<p>A medida que avanzamos en la lista, las inmunidades se vuelven menos comunes (como psychic, necrotic, deafened), lo cual sugiere que solo criaturas muy específicas presentan estas resistencias.</p>
+<p>Se revela un patrón importante: las inmunidades más comunes protegen contra efectos que los jugadores suelen usar con frecuencia, por lo que conocerlas permite planificar estrategias más efectivas y evitar hechizos o ataques que serán inútiles contra muchos enemigos.</p>
+</section>
+<section id="vulnerabilidades" class="level2">
+<h2 class="anchored" data-anchor-id="vulnerabilidades">Vulnerabilidades</h2>
+<p>Así como muchos monstruos poseen inmunidades, también esta el caso de que posean alguna vulnerabilidad. Cuando se sabe la vulnerabilidad del monstruo es más fácil planear el ataque y explotar esta “debilidad”.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/monstruos_vulnerabilidad.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Se puede ver cuántos monstruos presentan vulnerabilidad a distintos tipos de daño. En DnD, las vulnerabilidades son especialmente relevantes porque permiten que los ataques que utilicen ese tipo de daño inflijan el doble de daño, lo que puede cambiar radicalmente el desarrollo de un combate.</p>
+<p>Lo primero que destaca es que muy pocos monstruos presentan vulnerabilidades, y cuando existen, tienden a concentrarse en tipos de daño bastante específicos. La vulnerabilidad más común es fire, seguida por bludgeoning, mientras que otros daños aparecen en menor medida. Esto sugiere que, a diferencia de las inmunidades (mucho más frecuentes), las vulnerabilidades son excepciones y actúan como puntos débiles particulares de ciertos monstruos.</p>
+</section>
+</section>
+<section id="hechizos-vs-monstruos" class="level1">
+<h1>Hechizos VS Monstruos</h1>
+<p>Finalmente, vamos a comparar directamente la proporción de hechizos disponibles en cada nivel con la proporción de monstruos según su nivel de amenaza (CR). Esto para ver mejor cómo se distribuyen las herramientas y desafíos en DnD. Aunque ambos utilizan escalas distintas, normalizarlos a un rango común de 0 a 9 permite observar cómo se relaciona la progresión del poder mágico del jugador con la dificultad creciente de los encuentros.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures/comparativo_hechizos_monstruos.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Según el gráfico se puede observar que los monstruos están fuertemente concentrados en niveles bajos. En el CR 0, más del 60% de los monstruos se encuentran en este rango, mientras que la proporción disminuye abruptamente a medida que aumenta la dificultad. A partir de CR 5 en adelante, los monstruos representan solo una fracción mínima del total. Esto refleja el diseño clásico de D&amp;D: la mayoría de los encuentros están pensados para personajes principiantes o intermedios, y los enemigos verdaderamente peligrosos son excepcionales.</p>
+<p>También se puede observar que los hechizos presentan una distribución mucho más equilibrada. Si bien los niveles 1 y 2 tienen una mayor proporción de hechizos, la caída hacia niveles superiores es mucho más gradual que en los monstruos. Esto sugiere que el juego entrega herramientas mágicas de forma más homogénea a medida que los jugadores suben de nivel, permitiendo mantener un crecimiento sostenido de opciones sin depender únicamente del combate.</p>
+<p>Se revela una diferencia estructural, mientras los monstruos escasean en niveles altos, los hechizos continúan siendo numerosos. Esto puede interpretarse como un énfasis del juego en que los personajes de nivel alto tengan mayor variedad y complejidad táctica en “recompensa” a su experiencia, incluso si los encuentros con enemigos equivalentes son menos frecuentes.</p>
+<p>Por último, vale la pena observar que en el nivel1, la proporción de hechizos y monstruos es relativamente similar, indicando que esta etapa del juego está más estandarizada y equilibrada en cuanto a desafíos y recursos.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="proyecto_final_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
