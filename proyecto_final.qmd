@@ -31,7 +31,7 @@ Pueden conocer más sobre el juego aquí: <https://www.dndbeyond.com/>
 Dentro de las clases que existen en DnD, habrán clases que te permitirán acceder a distintos hechizos de una matriz determinada, distintas clases acceden a distintos tipos/cantidad de hechizos. Y estos mismos pueden ser de distintos niveles, de 0 a 9, para acceder a niveles más altos es necesario que tu personaje suba de nivel, por tanto, tener más horas de experiencia jugando. Por esto es que es interesante saber cómo se distribuye la cantidad de hechizos a través de sus niveles.
 
 ```{r}
-knitr::include_graphics("figures/hechizos_por_nivel.png")
+knitr::include_graphics("figures/spells_por_nivel.png")
 ```
 
 El gráfico muestra cómo se distribuyen los hechizos según su nivel de poder, desde nivel 0 (cantrips o trucos) hasta nivel 9, que corresponde a los hechizos más poderosos del juego.
@@ -43,7 +43,7 @@ Se observa que los niveles 1 y 2 concentran la mayor cantidad de hechizos, lo qu
 Como mencioné anteriormente, lo que va a determinar a cantidad de hechizos a disponibilidad del jugador es tanto el nivel, como la clase que seleccione. No todas las clases poseen magia, pero es interesante observar si existe una distribución igualitaria de hechizos dentro de las clases o si algunas clases tienen más acceso que otras.
 
 ```{r}
-knitr::include_graphics("figures/hechizos_por_clase.png")
+knitr::include_graphics("figures/spells_por_clase.png")
 ```
 
 El gráfico muestra cuántos hechizos puede aprender o utilizar cada una de las clases mágicas. La diferencia entre ellas es notable y refleja el rol que cada una desempeña dentro del juego.
@@ -55,7 +55,7 @@ No es de sorprender que wizard o "magos" sobresalgan con casi 200 hechizos dispo
 Una cosa es saber cúantos hechizos tiene cada clase, pero también importa la calidad de esos hechizos. ¿Es mejor tener 100 hechizos de nivel 1 o 10 hechizos de nivel 9? Veamos cómo se distribuyen los niveles y disponibilidad de hechizos entre clases.
 
 ```{r}
-knitr::include_graphics("figures/hechizos_heatmap.png")
+knitr::include_graphics("figures/spells_heatmap.png")
 ```
 
 Este heatmap muestra cómo se distribuyen los hechizos disponibles para cada clase de Dungeons & Dragons según su nivel de poder (de 0 a 9). Los colores más intensos indican una mayor cantidad de hechizos disponibles en ese nivel y para esa clase.
@@ -79,7 +79,7 @@ En DnD, los monstruos representan los principales desafíos que enfrentan los ju
 Analizar a los monstruos según su nivel de amenaza permite entender cómo se distribuyen los desafíos del juego, qué tipo de criaturas son más frecuentes y en qué rangos de peligro se concentran.
 
 ```{r}
-knitr::include_graphics("figures/monstruos_por_cr.png")
+knitr::include_graphics("figures/monsters_por_cr.png")
 ```
 
 El gráfico muestra que la mayoría de los monstruos del juego se concentran en los niveles de amenaza más bajos. La categoría "noob" (nuevo) agrupa por lejos la mayor cantidad de criaturas, lo que refleja que DnD ofrece una amplia variedad de enemigos diseñados para encuentros tempranos o para grupos menos experimentados. Conforme aumenta el nivel de amenaza, la cantidad de monstruos disponibles disminuye de manera notable.
@@ -91,7 +91,7 @@ Esta distribución tiene sentido desde el diseño del juego, ya que los monstruo
 Además de su nivel de amenaza, los monstruos de DnD poseen diversas inmunidades que determinan a qué tipos de daños o condiciones no pueden ser afectados. Estas inmunidades obligan a los jugadores a adaptar sus estrategias y seleccionar hechizos adecuados para superar resistencias especiales.
 
 ```{r}
-knitr::include_graphics("figures/monstruos_inmunidad.png")
+knitr::include_graphics("figures/monsters_inmunidad.png")
 ```
 
 El gráfico muestra cuántos monstruos poseen inmunidad a distintas condiciones o tipos de daño.\
@@ -110,7 +110,7 @@ Se revela un patrón importante: las inmunidades más comunes protegen contra ef
 Así como muchos monstruos poseen inmunidades, también esta el caso de que posean alguna vulnerabilidad. Cuando se sabe la vulnerabilidad del monstruo es más fácil planear el ataque y explotar esta "debilidad".
 
 ```{r}
-knitr::include_graphics("figures/monstruos_vulnerabilidad.png")
+knitr::include_graphics("figures/monsters_vulnerabilidad.png")
 ```
 
 Se puede ver cuántos monstruos presentan vulnerabilidad a distintos tipos de daño. En DnD, las vulnerabilidades son especialmente relevantes porque permiten que los ataques que utilicen ese tipo de daño inflijan el doble de daño, lo que puede cambiar radicalmente el desarrollo de un combate.
@@ -122,7 +122,7 @@ Lo primero que destaca es que muy pocos monstruos presentan vulnerabilidades, y 
 Finalmente, vamos a comparar directamente la proporción de hechizos disponibles en cada nivel con la proporción de monstruos según su nivel de amenaza (CR). Esto para ver mejor cómo se distribuyen las herramientas y desafíos en DnD. Aunque ambos utilizan escalas distintas, normalizarlos a un rango común de 0 a 9 permite observar cómo se relaciona la progresión del poder mágico del jugador con la dificultad creciente de los encuentros.
 
 ```{r}
-knitr::include_graphics("figures/comparativo_hechizos_monstruos.png")
+knitr::include_graphics("figures/comparativo_spells_monsters.png")
 ```
 
 Según el gráfico se puede observar que los monstruos están fuertemente concentrados en niveles bajos. En el CR 0, más del 60% de los monstruos se encuentran en este rango, mientras que la proporción disminuye abruptamente a medida que aumenta la dificultad. A partir de CR 5 en adelante, los monstruos representan solo una fracción mínima del total. Esto refleja el diseño clásico de D&D: la mayoría de los encuentros están pensados para personajes principiantes o intermedios, y los enemigos verdaderamente peligrosos son excepcionales.

@@ -17,7 +17,7 @@ monsters <- read_csv("data/procesados/monsters_clean.csv")
 spells_por_nivel <- spells %>%
   count(level, name = "n_spells")
 
-p_hechizos_nivel <- ggplot(spells_por_nivel, aes(x = level, y = n_spells)) +
+p_spells_nivel <- ggplot(spells_por_nivel, aes(x = level, y = n_spells)) +
   geom_col(fill = "#9333FF", alpha = 0.6) +
   scale_x_continuous(breaks = 0:9) +
   scale_y_continuous(breaks = seq(0, 60, by = 5)) +
@@ -27,7 +27,7 @@ p_hechizos_nivel <- ggplot(spells_por_nivel, aes(x = level, y = n_spells)) +
     y = "Número de hechizos"
   ) +
   theme_classic()
-p_hechizos_nivel
+p_spells_nivel
 
 #Ahora vamos a analizar hechizos por su disponibilidad y cantidad para distintas clases
 
@@ -40,7 +40,7 @@ spell_long <- spells %>%
   ) %>%
   filter(puede_usar == TRUE)
 
-p_hechizos_clase <- spell_long %>%
+p_spells_clase <- spell_long %>%
   count(clase, name = "n_hechizos") %>%
   ggplot(aes(x = reorder(clase, n_hechizos), y = n_hechizos)) +
   geom_col(fill = "#9333FF") +
@@ -51,7 +51,7 @@ p_hechizos_clase <- spell_long %>%
     y = "Número de hechizos"
   ) +
   theme_classic()
-p_hechizos_clase
+p_spells_clase
 
 #Ahora ver cuántos hechizos (por nivel) tiene disponible cada clase con un heatmap
 
@@ -74,7 +74,7 @@ p_heatmap_clases
 
 #Ahora pasamos a la base de montruos, primero revisamos cantidad de montruos por nivel de amenaza
 
-p_monstruos_cr <- ggplot(
+p_monsters_cr <- ggplot(
   monsters,
   aes(x = factor(cr_group,
                  levels = c("Noob", "Intermedio", "Avanzado", "Épico", "Legendario")))
@@ -89,7 +89,7 @@ p_monstruos_cr <- ggplot(
     y = "Cantidad de monstruos"
   ) +
   theme_classic()
-p_monstruos_cr
+p_monsters_cr
 
 #Vamos a ver número de monstruos por vulnerabilidad
 
@@ -173,10 +173,10 @@ p_comparativo <- ggplot(comparativo, aes(x = nivel, y = proporcion, color = tipo
 
 #guardar archivos
 
-ggsave("figures/hechizos_por_nivel.png", p_hechizos_nivel, width = 8, height = 5)
-ggsave("figures/hechizos_por_clase.png", p_hechizos_clase, width = 8, height = 5)
-ggsave("figures/hechizos_heatmap.png", p_heatmap_clases, width = 8, height = 5)
-ggsave("figures/monstruos_por_cr.png", p_monstruos_cr, width = 8, height = 5)
-ggsave("figures/monstruos_vulnerabilidad.png", p_vulnerabilidades, width = 8, height = 5)
-ggsave("figures/monstruos_inmunidad.png", p_inmunidades, width = 8, height = 5)
-ggsave("figures/comparativo_hechizos_monstruos.png", p_comparativo, width = 8, height = 5)
+ggsave("figures/spells_por_nivel.png", p_spells_nivel, width = 8, height = 5)
+ggsave("figures/spells_por_clase.png", p_spells_clase, width = 8, height = 5)
+ggsave("figures/spells_heatmap.png", p_heatmap_clases, width = 8, height = 5)
+ggsave("figures/monsters_por_cr.png", p_monsters_cr, width = 8, height = 5)
+ggsave("figures/monsters_vulnerabilidad.png", p_vulnerabilidades, width = 8, height = 5)
+ggsave("figures/monsters_inmunidad.png", p_inmunidades, width = 8, height = 5)
+ggsave("figures/comparativo_spells_monsters.png", p_comparativo, width = 8, height = 5)
