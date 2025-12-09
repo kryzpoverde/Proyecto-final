@@ -93,14 +93,11 @@ p_monstruos_cr
 
 #Vamos a ver número de monstruos por vulnerabilidad
 
-vuln <- monsters %>%
-  select(vulnerabilities) %>%
-  separate_rows(vulnerabilities, sep = ", ") %>%
-  filter(!is.na(vulnerabilities),
-         vulnerabilities != "")
-
-vuln_resumen <- vuln %>%
-  count(vulnerabilities, name = "n_monstruos")
+vuln_resumen <- monsters %>%
+  select(vulnerabilities) %>% #seleccionamos la columna de vulnerabilidad
+  separate_rows(vulnerabilities, sep = ", ") %>% #como hay monstruos que tienen más de una vulnerabilidad, separamos para que se cuenten independientemente
+  filter(!is.na(vulnerabilities), vulnerabilities != "") %>% #filtramos NA de monstruos sin vulnerabilidades
+  count(vulnerabilities, name = "n_monstruos") #contar cuantos monstruos hay por vulnerabilidad
 
 p_vulnerabilidades <- ggplot(vuln_resumen,
                              aes(x = n_monstruos,
@@ -117,12 +114,10 @@ p_vulnerabilidades
 
 #Repetimos el proceso para inmunidades
 
-immune <- monsters %>%
+immune_resumen <- monsters %>%
   select(immunities) %>%
-  separate_rows(immunities, sep = ", |; ") %>%
-  filter(immunities != "", !is.na(immunities))
-
-immune_resumen <- immune %>%
+  separate_rows(immunities, sep = ", |; ") %>% #aquí además de separar por "," también separé por ";" porque la columna de inmunidades venía con estas dos separaciones
+  filter(immunities != "", !is.na(immunities)) %>%
   count(immunities, name = "n_monstruos")
 
 p_inmunidades <- ggplot(immune_resumen,
@@ -151,8 +146,7 @@ monsters_scaled <- monsters %>%
 spells_por_nivel <- spells_por_nivel %>%
   mutate(prop_spells = n_spells / sum(n_spells))
 monsters_por_nivel <- monsters_scaled %>%
-  count(cr_bin, name = "n_monsters")
-monsters_por_nivel <- monsters_por_nivel %>%
+  count(cr_bin, name = "n_monsters") %>%
   mutate(prop_monsters = n_monsters / sum(n_monsters))
 
 #Unimos ambos datasets en uno para graficar
@@ -164,7 +158,7 @@ comparativo <- bind_rows(
 
 #Graficamos
 
-ggplot(comparativo, aes(x = nivel, y = proporcion, color = tipo)) +
+p_comparativo <- ggplot(comparativo, aes(x = nivel, y = proporcion, color = tipo)) +
   geom_line(size = 1.4) +
   geom_point(size = 2.5) +
   scale_x_continuous(breaks = 0:9) +
@@ -176,3 +170,13 @@ ggplot(comparativo, aes(x = nivel, y = proporcion, color = tipo)) +
     color = "Categoría"
   ) +
   theme_classic()
+
+#guardar archivos
+
+ggsave("figures/hechizos_por_nivel.png", p_hechizos_nivel, width = 8, height = 5)
+ggsave("figures/hechizos_por_clase.png", p_hechizos_clase, width = 8, height = 5)
+ggsave("figures/hechizos_heatmap.png", p_heatmap_clases, width = 8, height = 5)
+ggsave("figures/monstruos_por_cr.png", p_monstruos_cr, width = 8, height = 5)
+ggsave("figures/monstruos_vulnerabilidad.png", p_vulnerabilidades, width = 8, height = 5)
+ggsave("figures/monstruos_inmunidad.png", p_inmunidades, width = 8, height = 5)
+ggsave("figures/comparativo_hechizos_monstruos.png", p_comparativo, width = 8, height = 5)

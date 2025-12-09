@@ -87,27 +87,11 @@ ggplot(monsters, aes(x = cr_group)) +
 
 #Vamos a ver número de monstruos por vulnerabilidad
 
-#Seleccionamos la columna de vulnerabilidad
-
-vuln <- monsters %>%
-  select(vulnerabilities)
-
-#Como hay monstruos con más de una vulnerabilidad, separamos estas para que se cuenten independientemente
-
-vuln <- vuln %>%
-  separate_rows(vulnerabilities, sep = ", ")
-
-#Limpiamos NA de monstruos sin vulnerabilidades
-
-vuln <- vuln %>%
-  filter(!is.na(vulnerabilities),
-         vulnerabilities != "")
-
-#Ahora si vemos cuantos monstruos hay por vulnerabilidad
-
-vuln_resumen <- vuln %>%
-  count(vulnerabilities, name = "n_monstruos")
-vuln_resumen
+vuln_resumen <- monsters %>%
+  select(vulnerabilities) %>% #seleccionamos la columna de vulnerabilidad
+  separate_rows(vulnerabilities, sep = ", ") %>% #como hay monstruos que tienen más de una vulnerabilidad, separamos para que se cuenten independientemente
+  filter(!is.na(vulnerabilities), vulnerabilities != "") %>% #filtramos NA de monstruos sin vulnerabilidades
+  count(vulnerabilities, name = "n_monstruos") #contar cuantos monstruos hay por vulnerabilidad
 
 #Graficamos
 
@@ -121,14 +105,11 @@ ggplot(vuln_resumen, aes(x = vulnerabilities, y = n_monstruos)) +
 
 #Repetimos el proceso para inmunidades
 
-immune <- monsters %>%
+immune_resumen <- monsters %>%
   select(immunities) %>%
-  separate_rows(immunities, sep = ", |; ") %>%
-  filter(immunities != "", !is.na(immunities))
-
-immune_resumen <- immune %>%
+  separate_rows(immunities, sep = ", |; ") %>% #aquí además de separar por "," también separé por ";" porque la columna de inmunidades venía con estas dos separaciones
+  filter(immunities != "", !is.na(immunities)) %>%
   count(immunities, name = "n_monstruos")
-immune_resumen
 
 
 #Graficamos
@@ -155,8 +136,7 @@ monsters_scaled <- monsters %>%
 spells_por_nivel <- spells_por_nivel %>%
   mutate(prop_spells = n_spells / sum(n_spells))
 monsters_por_nivel <- monsters_scaled %>%
-  count(cr_bin, name = "n_monsters")
-monsters_por_nivel <- monsters_por_nivel %>%
+  count(cr_bin, name = "n_monsters") %>%
   mutate(prop_monsters = n_monsters / sum(n_monsters))
 
 #Unimos ambos datasets en uno para graficar
