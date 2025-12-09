@@ -102,14 +102,14 @@ vuln_resumen <- monsters %>%
 p_vulnerabilidades <- ggplot(vuln_resumen,
                              aes(x = n_monstruos,
                                  y = reorder(vulnerabilities, n_monstruos))) +
-  geom_col(fill = "pink") +
+  geom_col(fill = "pink", alpha = 0.8) +
   labs(
     title = "Cantidad de monstruos vulnerables por tipo de daño",
     x = "Número de monstruos",
     y = "Tipo de daño"
   ) +
   scale_y_discrete(labels = function(x) stringr::str_trunc(x, 16, ellipsis = "")) +
-  theme_minimal()
+  theme_classic()
 p_vulnerabilidades
 
 #Repetimos el proceso para inmunidades

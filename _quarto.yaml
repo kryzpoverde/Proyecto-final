@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Análisis del universo de D&D"
+  navbar:
+    left:
+      - href: proyecto_final.qmd
+        text: Inicio
+
+format:
+  html:
+    theme: superhero
+    toc: true
+    toc-location: right
+    smooth-scroll: true
+    page-layout: article
+lang: es

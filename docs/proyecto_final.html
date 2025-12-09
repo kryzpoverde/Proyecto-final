@@ -24,16 +24,49 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="proyecto_final_files/libs/clipboard/clipboard.min.js"></script>
-<script src="proyecto_final_files/libs/quarto-html/quarto.js"></script>
-<script src="proyecto_final_files/libs/quarto-html/popper.min.js"></script>
-<script src="proyecto_final_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="proyecto_final_files/libs/quarto-html/anchor.min.js"></script>
-<link href="proyecto_final_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="proyecto_final_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="proyecto_final_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="proyecto_final_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="proyecto_final_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <style>
 
@@ -45,8 +78,35 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body>
+<body class="nav-fixed">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Análisis del universo de D&amp;D</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./proyecto_final.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
@@ -69,10 +129,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
   <li><a href="#dungeons-dragons" id="toc-dungeons-dragons" class="nav-link active" data-scroll-target="#dungeons-dragons">Dungeons &amp; Dragons</a></li>
@@ -89,7 +151,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#hechizos-vs-monstruos" id="toc-hechizos-vs-monstruos" class="nav-link" data-scroll-target="#hechizos-vs-monstruos">Hechizos VS Monstruos</a></li>
   </ul>
 </nav>
-</div>
+    </div>
+<!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
@@ -222,10 +285,11 @@ La inmunidad más frecuente es charmed, lo que indica que muchos monstruos no pu
 <p>También se puede observar que los hechizos presentan una distribución mucho más equilibrada. Si bien los niveles 1 y 2 tienen una mayor proporción de hechizos, la caída hacia niveles superiores es mucho más gradual que en los monstruos. Esto sugiere que el juego entrega herramientas mágicas de forma más homogénea a medida que los jugadores suben de nivel, permitiendo mantener un crecimiento sostenido de opciones sin depender únicamente del combate.</p>
 <p>Se revela una diferencia estructural, mientras los monstruos escasean en niveles altos, los hechizos continúan siendo numerosos. Esto puede interpretarse como un énfasis del juego en que los personajes de nivel alto tengan mayor variedad y complejidad táctica en “recompensa” a su experiencia, incluso si los encuentros con enemigos equivalentes son menos frecuentes.</p>
 <p>Por último, vale la pena observar que en el nivel1, la proporción de hechizos y monstruos es relativamente similar, indicando que esta etapa del juego está más estandarizada y equilibrada en cuanto a desafíos y recursos.</p>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -651,5 +715,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="proyecto_final_files/libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
